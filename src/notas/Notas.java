@@ -1,21 +1,12 @@
 package notas;
 
-import java.util.Scanner;
-
 public class Notas {
 
+	/**
+	 * @deprecated Use {@link Califica#main(String[])} instead
+	 */
 	public static void main(String[] args) {
-		Scanner reader = new Scanner(System.in);// Para pedir números por teclado
-		int nota = 0;
-		String calificacion = "";
-		System.out.print("Introduzca una nota: ");
-		nota = reader.nextInt();
-		
-//Método cali, que determina según la nota, la calificación.
-		calificacion = califica(nota);
-
-		System.out.println(calificacion);
-		reader.close();
+		Califica.main(args);
 	}
 
 	/**
