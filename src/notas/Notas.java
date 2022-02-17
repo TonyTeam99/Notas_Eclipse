@@ -11,13 +11,14 @@ public class Notas {
 		System.out.print("Introduzca una nota: ");
 		nota = reader.nextInt();
 
+//Método cali, que determina según la nota, la calificación.
 		calificacion = cali(nota);
 
 		System.out.println(calificacion);
 		reader.close();
 	}
 
-	private static String cali(int nota) {
+	public static String cali(int nota) {
 		String calificacion;
 		if (nota >= 0 && nota < 5)
 			calificacion = "Suspenso";
